@@ -12,4 +12,13 @@ struct GameState {
     let answer: String
     var guessedCharacters: Set<Character> = Set()
     
+    init(answer: String) {
+        self.answer = answer
+    }
+    
+    mutating func guess(character: Character) -> Bool {
+        guessedCharacters.insert(character)
+        
+        return answer.characters.contains(character)
+    }
 }

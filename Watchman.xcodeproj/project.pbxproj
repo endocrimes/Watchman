@@ -24,6 +24,7 @@
 		65524B801BA20E4C003F0012 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7F1BA20E4C003F0012 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B821BA20E52003F0012 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B841BA21043003F0012 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65524B831BA21043003F0012 /* words.txt */; settings = {ASSET_TAGS = (); }; };
+		65524B861BA21345003F0012 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B851BA21345003F0012 /* WordList.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,6 +100,7 @@
 		65524B7F1BA20E4C003F0012 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
 		65524B811BA20E52003F0012 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		65524B831BA21043003F0012 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
+		65524B851BA21345003F0012 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -186,6 +188,7 @@
 				65524B7D1BA20D9E003F0012 /* ImageFrames.swift */,
 				65524B7F1BA20E4C003F0012 /* GameController.swift */,
 				65524B811BA20E52003F0012 /* Game.swift */,
+				65524B851BA21345003F0012 /* WordList.swift */,
 				65524B641BA20371003F0012 /* InterfaceController.swift */,
 				65524B661BA20371003F0012 /* ExtensionDelegate.swift */,
 				65524B6A1BA20371003F0012 /* Assets.xcassets */,
@@ -387,6 +390,7 @@
 				65524B801BA20E4C003F0012 /* GameController.swift in Sources */,
 				65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */,
 				65524B651BA20371003F0012 /* InterfaceController.swift in Sources */,
+				65524B861BA21345003F0012 /* WordList.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,7 +19,6 @@
 		65524B5E1BA20371003F0012 /* Watchman WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 65524B5D1BA20371003F0012 /* Watchman WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		65524B651BA20371003F0012 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B641BA20371003F0012 /* InterfaceController.swift */; };
 		65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B661BA20371003F0012 /* ExtensionDelegate.swift */; };
-		65524B691BA20371003F0012 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B681BA20371003F0012 /* NotificationController.swift */; };
 		65524B6B1BA20371003F0012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65524B6A1BA20371003F0012 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
@@ -91,7 +90,6 @@
 		65524B631BA20371003F0012 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		65524B641BA20371003F0012 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		65524B661BA20371003F0012 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
-		65524B681BA20371003F0012 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
 		65524B6A1BA20371003F0012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65524B6C1BA20371003F0012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -180,7 +178,6 @@
 			children = (
 				65524B641BA20371003F0012 /* InterfaceController.swift */,
 				65524B661BA20371003F0012 /* ExtensionDelegate.swift */,
-				65524B681BA20371003F0012 /* NotificationController.swift */,
 				65524B6A1BA20371003F0012 /* Assets.xcassets */,
 				65524B6C1BA20371003F0012 /* Info.plist */,
 				65524B621BA20371003F0012 /* Supporting Files */,
@@ -374,7 +371,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65524B691BA20371003F0012 /* NotificationController.swift in Sources */,
 				65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */,
 				65524B651BA20371003F0012 /* InterfaceController.swift in Sources */,
 			);

@@ -22,9 +22,10 @@
 		65524B6B1BA20371003F0012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65524B6A1BA20371003F0012 /* Assets.xcassets */; };
 		65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7D1BA20D9E003F0012 /* ImageFrames.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B801BA20E4C003F0012 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7F1BA20E4C003F0012 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
-		65524B821BA20E52003F0012 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
+		65524B821BA20E52003F0012 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B841BA21043003F0012 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65524B831BA21043003F0012 /* words.txt */; settings = {ASSET_TAGS = (); }; };
 		65524B861BA21345003F0012 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B851BA21345003F0012 /* WordList.swift */; settings = {ASSET_TAGS = (); }; };
+		65524B881BA2189A003F0012 /* CharacterPickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -98,9 +99,10 @@
 		65524B6C1BA20371003F0012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65524B7D1BA20D9E003F0012 /* ImageFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrames.swift; sourceTree = "<group>"; };
 		65524B7F1BA20E4C003F0012 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		65524B811BA20E52003F0012 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		65524B811BA20E52003F0012 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
 		65524B831BA21043003F0012 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 		65524B851BA21345003F0012 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterPickerInterfaceController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -187,9 +189,10 @@
 			children = (
 				65524B7D1BA20D9E003F0012 /* ImageFrames.swift */,
 				65524B7F1BA20E4C003F0012 /* GameController.swift */,
-				65524B811BA20E52003F0012 /* Game.swift */,
+				65524B811BA20E52003F0012 /* GameState.swift */,
 				65524B851BA21345003F0012 /* WordList.swift */,
 				65524B641BA20371003F0012 /* InterfaceController.swift */,
+				65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */,
 				65524B661BA20371003F0012 /* ExtensionDelegate.swift */,
 				65524B6A1BA20371003F0012 /* Assets.xcassets */,
 				65524B6C1BA20371003F0012 /* Info.plist */,
@@ -386,9 +389,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */,
-				65524B821BA20E52003F0012 /* Game.swift in Sources */,
+				65524B821BA20E52003F0012 /* GameState.swift in Sources */,
 				65524B801BA20E4C003F0012 /* GameController.swift in Sources */,
 				65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */,
+				65524B881BA2189A003F0012 /* CharacterPickerInterfaceController.swift in Sources */,
 				65524B651BA20371003F0012 /* InterfaceController.swift in Sources */,
 				65524B861BA21345003F0012 /* WordList.swift in Sources */,
 			);

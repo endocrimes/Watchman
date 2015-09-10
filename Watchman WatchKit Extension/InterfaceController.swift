@@ -9,23 +9,63 @@
 import WatchKit
 import Foundation
 
+class ContextObject {
+    var input: String?
+    var output: Character?
+}
 
 class InterfaceController: WKInterfaceController {
-
-    override func awakeWithContext(context: AnyObject?) {
-        super.awakeWithContext(context)
+    var contextObject: ContextObject?
+    var gameState = GameState(answer: "interface")
+    
+    @IBOutlet var hangmanImageView: WKInterfaceImage!
+    @IBOutlet var guessLabel: WKInterfaceLabel!
+    
+    @IBAction func resetGameButtonTapped() {
+        gameState = GameState(answer: "iosdevuk")
+    }
+    
+    @IBAction func pickCharacterButtonTapped() {
+        if gameState.frame == .Frame11 {
+            WKInterfaceDevice().playHaptic(.Failure)
+            
+            return
+        }
         
-        // Configure interface objects here.
+        let string = String(Array(gameState.guessedCharacters))
+        
+        contextObject = ContextObject()
+        contextObject?.input = string
+        
+        pushControllerWithName("CharacterPicker", context: contextObject)
     }
-
-    override func willActivate() {
-        // This method is called when watch view controller is about to be visible to user
-        super.willActivate()
+    
+    override func didAppear() {
+        super.didAppear()
+        
+        if let output = self.contextObject?.output {
+            if gameState.guess(output) {
+                WKInterfaceDevice().playHaptic(.Success)
+            }
+            else {
+                WKInterfaceDevice().playHaptic(.Failure)
+            }
+        }
+        
+        updateUI()
+        
+        contextObject = nil
     }
-
-    override func didDeactivate() {
-        // This method is called when watch view controller is no longer visible
-        super.didDeactivate()
+    
+    func updateUI() {
+        guessLabel.setText(gameState.displayString())
+        if gameState.frame == .None {
+            hangmanImageView.setImage(nil)
+        }
+        else {
+            animateWithDuration(0.2) {
+                self.hangmanImageView.setImageNamed(self.gameState.frame.rawValue)
+            }
+        }
     }
-
 }

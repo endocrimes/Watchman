@@ -9,6 +9,7 @@
 import UIKit
 
 enum ImageFrame : String {
+    case None
     case Frame1 = "Frame 1"
     case Frame2 = "Frame 2"
     case Frame3 = "Frame 3"
@@ -20,8 +21,36 @@ enum ImageFrame : String {
     case Frame9 = "Frame 9"
     case Frame10 = "Frame 10"
     case Frame11 = "Frame 11"
-}
-
-func UIImageWithImageFrame(frame: ImageFrame) -> UIImage? {
-    return UIImage(named: frame.rawValue)
+    
+    func nextFrame() -> ImageFrame {
+        var frame: ImageFrame!
+        switch self {
+        case .None:
+            frame = .Frame1
+        case .Frame1:
+            frame = .Frame2
+        case .Frame2:
+            frame = .Frame3
+        case .Frame3:
+            frame = .Frame4
+        case .Frame4:
+            frame = .Frame5
+        case .Frame5:
+            frame = .Frame6
+        case .Frame6:
+            frame = .Frame7
+        case .Frame7:
+            frame = .Frame8
+        case .Frame8:
+            frame = .Frame9
+        case .Frame9:
+            frame = .Frame10
+        case .Frame10:
+            frame = .Frame11
+        case .Frame11:
+            frame = .Frame11
+        }
+        
+        return frame
+    }
 }

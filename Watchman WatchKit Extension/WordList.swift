@@ -9,16 +9,19 @@
 import Foundation
 
 class WordList {
-    private let fileURL: NSURL
+    private let fileURL: String
     private var words: [String] = []
     
-    init(fileURL: NSURL) {
+    init(fileURL: String) {
         self.fileURL = fileURL
     }
     
-    func fetchRandomWord(completion: (String) -> ()) {
-        dispatch_async(dispatch_get_main_queue()) {
-            completion("Foundation")
-        }
+    func fetchRandomWord() -> String {
+        let string = try! NSString(contentsOfFile: self.fileURL, encoding: NSUTF8StringEncoding)
+        let components = string.componentsSeparatedByString("\n")
+        let index = random() % components.count
+        let word = components[index].lowercaseString
+        
+        return word
     }
 }

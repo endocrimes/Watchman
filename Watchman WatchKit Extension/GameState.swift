@@ -11,7 +11,7 @@ import Foundation
 struct GameState {
     let answer: String
     var guessedCharacters: Set<Character> = Set()
-    var frame: ImageFrame = .None
+    var frame: ImageFrame = .Frame0
     
     init(answer: String) {
         self.answer = answer

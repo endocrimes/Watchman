@@ -9,7 +9,7 @@
 import UIKit
 
 enum ImageFrame : String {
-    case None
+    case Frame0 = "Frame 0"
     case Frame1 = "Frame 1"
     case Frame2 = "Frame 2"
     case Frame3 = "Frame 3"
@@ -25,7 +25,7 @@ enum ImageFrame : String {
     func nextFrame() -> ImageFrame {
         var frame: ImageFrame!
         switch self {
-        case .None:
+        case .Frame0:
             frame = .Frame1
         case .Frame1:
             frame = .Frame2

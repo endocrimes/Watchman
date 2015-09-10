@@ -16,13 +16,16 @@ class ContextObject {
 
 class InterfaceController: WKInterfaceController {
     var contextObject: ContextObject?
-    var gameState = GameState(answer: "interface")
+    var gameState: GameState!
     
     @IBOutlet var hangmanImageView: WKInterfaceImage!
     @IBOutlet var guessLabel: WKInterfaceLabel!
     
     @IBAction func resetGameButtonTapped() {
-        gameState = GameState(answer: "iosdevuk")
+        let list = WordList(fileURL: NSBundle.mainBundle().pathForResource("words", ofType: "txt")!)
+        let word = list.fetchRandomWord()
+        gameState = GameState(answer: word)
+        updateUI()
     }
     
     @IBAction func pickCharacterButtonTapped() {
@@ -52,20 +55,20 @@ class InterfaceController: WKInterfaceController {
             }
         }
         
-        updateUI()
+        if let _ = self.gameState {
+            updateUI()
+        }
+        else {
+            resetGameButtonTapped()
+        }
         
         contextObject = nil
     }
     
     func updateUI() {
         guessLabel.setText(gameState.displayString())
-        if gameState.frame == .None {
-            hangmanImageView.setImage(nil)
-        }
-        else {
-            animateWithDuration(0.2) {
-                self.hangmanImageView.setImageNamed(self.gameState.frame.rawValue)
-            }
+        animateWithDuration(0.2) {
+            self.hangmanImageView.setImageNamed(self.gameState.frame.rawValue)
         }
     }
 }

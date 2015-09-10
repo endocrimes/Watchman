@@ -20,6 +20,10 @@
 		65524B651BA20371003F0012 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B641BA20371003F0012 /* InterfaceController.swift */; };
 		65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B661BA20371003F0012 /* ExtensionDelegate.swift */; };
 		65524B6B1BA20371003F0012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65524B6A1BA20371003F0012 /* Assets.xcassets */; };
+		65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7D1BA20D9E003F0012 /* ImageFrames.swift */; settings = {ASSET_TAGS = (); }; };
+		65524B801BA20E4C003F0012 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7F1BA20E4C003F0012 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
+		65524B821BA20E52003F0012 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* Game.swift */; settings = {ASSET_TAGS = (); }; };
+		65524B841BA21043003F0012 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65524B831BA21043003F0012 /* words.txt */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,11 +91,14 @@
 		65524B561BA20371003F0012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65524B581BA20371003F0012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65524B5D1BA20371003F0012 /* Watchman WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Watchman WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		65524B631BA20371003F0012 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
 		65524B641BA20371003F0012 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
 		65524B661BA20371003F0012 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		65524B6A1BA20371003F0012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65524B6C1BA20371003F0012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65524B7D1BA20D9E003F0012 /* ImageFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrames.swift; sourceTree = "<group>"; };
+		65524B7F1BA20E4C003F0012 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		65524B811BA20E52003F0012 /* Game.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		65524B831BA21043003F0012 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -176,6 +183,9 @@
 		65524B611BA20371003F0012 /* Watchman WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
+				65524B7D1BA20D9E003F0012 /* ImageFrames.swift */,
+				65524B7F1BA20E4C003F0012 /* GameController.swift */,
+				65524B811BA20E52003F0012 /* Game.swift */,
 				65524B641BA20371003F0012 /* InterfaceController.swift */,
 				65524B661BA20371003F0012 /* ExtensionDelegate.swift */,
 				65524B6A1BA20371003F0012 /* Assets.xcassets */,
@@ -188,7 +198,7 @@
 		65524B621BA20371003F0012 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				65524B631BA20371003F0012 /* PushNotificationPayload.apns */,
+				65524B831BA21043003F0012 /* words.txt */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -343,6 +353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65524B841BA21043003F0012 /* words.txt in Resources */,
 				65524B6B1BA20371003F0012 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -371,6 +382,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */,
+				65524B821BA20E52003F0012 /* Game.swift in Sources */,
+				65524B801BA20E4C003F0012 /* GameController.swift in Sources */,
 				65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */,
 				65524B651BA20371003F0012 /* InterfaceController.swift in Sources */,
 			);

@@ -10,7 +10,7 @@ import Foundation
 
 public struct GameState {
     let answer: String
-    var guessedCharacters: Set<Character> = Set()
+    public var guessedCharacters: Set<Character> = Set()
     public var frame: ImageFrame = .Frame0
     
     public init(answer: String) {

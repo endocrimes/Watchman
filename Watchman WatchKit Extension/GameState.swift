@@ -8,16 +8,16 @@
 
 import Foundation
 
-struct GameState {
+public struct GameState {
     let answer: String
     var guessedCharacters: Set<Character> = Set()
-    var frame: ImageFrame = .Frame0
+    public var frame: ImageFrame = .Frame0
     
-    init(answer: String) {
+    public init(answer: String) {
         self.answer = answer
     }
     
-    mutating func guess(character: Character) -> Bool {
+    public mutating func guess(character: Character) -> Bool {
         guessedCharacters.insert(character)
         
         let result = answer.characters.contains(character)
@@ -29,7 +29,7 @@ struct GameState {
         return result
     }
     
-    func displayString() -> String {
+    public func displayString() -> String {
         var string = ""
         for character in answer.characters {
             if string.characters.count > 0 {

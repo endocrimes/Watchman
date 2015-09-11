@@ -20,12 +20,18 @@
 		65524B651BA20371003F0012 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B641BA20371003F0012 /* InterfaceController.swift */; };
 		65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B661BA20371003F0012 /* ExtensionDelegate.swift */; };
 		65524B6B1BA20371003F0012 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 65524B6A1BA20371003F0012 /* Assets.xcassets */; };
-		65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7D1BA20D9E003F0012 /* ImageFrames.swift */; settings = {ASSET_TAGS = (); }; };
-		65524B801BA20E4C003F0012 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B7F1BA20E4C003F0012 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
-		65524B821BA20E52003F0012 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B841BA21043003F0012 /* words.txt in Resources */ = {isa = PBXBuildFile; fileRef = 65524B831BA21043003F0012 /* words.txt */; settings = {ASSET_TAGS = (); }; };
-		65524B861BA21345003F0012 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B851BA21345003F0012 /* WordList.swift */; settings = {ASSET_TAGS = (); }; };
 		65524B881BA2189A003F0012 /* CharacterPickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC6FE01BA2CAB7007D30B9 /* Noose.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DC6FDF1BA2CAB7007D30B9 /* Noose.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		65DC6FE71BA2CAB7007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ASSET_TAGS = (); }; };
+		65DC6FEE1BA2CAB7007D30B9 /* NooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */; };
+		65DC6FFC1BA2CACD007D30B9 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FFB1BA2CACD007D30B9 /* WordList.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC6FFE1BA2CB22007D30B9 /* ImageFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC70051BA2CBD2007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
+		65DC70061BA2CBD2007D30B9 /* Noose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65DC700A1BA2CD2F007D30B9 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC700B1BA2CEB3007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
+		65DC700C1BA2CEB3007D30B9 /* Noose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,34 @@
 			proxyType = 1;
 			remoteGlobalIDString = 65524B5C1BA20371003F0012;
 			remoteInfo = "Watchman WatchKit Extension";
+		};
+		65DC6FE81BA2CAB7007D30B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65524B291BA20370003F0012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DC6FDC1BA2CAB7007D30B9;
+			remoteInfo = Noose;
+		};
+		65DC6FEA1BA2CAB7007D30B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65524B291BA20370003F0012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65524B301BA20370003F0012;
+			remoteInfo = Watchman;
+		};
+		65DC70071BA2CBD2007D30B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65524B291BA20370003F0012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DC6FDC1BA2CAB7007D30B9;
+			remoteInfo = Noose;
+		};
+		65DC700D1BA2CEB3007D30B9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 65524B291BA20370003F0012 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 65DC6FDC1BA2CAB7007D30B9;
+			remoteInfo = Noose;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -75,6 +109,28 @@
 			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65DC6FF91BA2CAB7007D30B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65DC700C1BA2CEB3007D30B9 /* Noose.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC70091BA2CBD2007D30B9 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				65DC70061BA2CBD2007D30B9 /* Noose.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -97,12 +153,17 @@
 		65524B661BA20371003F0012 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
 		65524B6A1BA20371003F0012 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		65524B6C1BA20371003F0012 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		65524B7D1BA20D9E003F0012 /* ImageFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrames.swift; sourceTree = "<group>"; };
-		65524B7F1BA20E4C003F0012 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
-		65524B811BA20E52003F0012 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameState.swift; sourceTree = "<group>"; };
+		65524B811BA20E52003F0012 /* GameState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = GameState.swift; path = "../Watchman WatchKit Extension/GameState.swift"; sourceTree = "<group>"; };
 		65524B831BA21043003F0012 /* words.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = words.txt; sourceTree = "<group>"; };
-		65524B851BA21345003F0012 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterPickerInterfaceController.swift; sourceTree = "<group>"; };
+		65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Noose.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DC6FDF1BA2CAB7007D30B9 /* Noose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noose.h; sourceTree = "<group>"; };
+		65DC6FE11BA2CAB7007D30B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DC6FE61BA2CAB7007D30B9 /* NooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NooseTests.swift; sourceTree = "<group>"; };
+		65DC6FEF1BA2CAB7007D30B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		65DC6FFB1BA2CACD007D30B9 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
+		65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrames.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +171,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DC700B1BA2CEB3007D30B9 /* Noose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,6 +186,22 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				65DC70051BA2CBD2007D30B9 /* Noose.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC6FD91BA2CAB7007D30B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC6FE31BA2CAB7007D30B9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DC6FE71BA2CAB7007D30B9 /* Noose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,6 +215,8 @@
 				65524B481BA20371003F0012 /* WatchmanTests */,
 				65524B521BA20371003F0012 /* Watchman WatchKit App */,
 				65524B611BA20371003F0012 /* Watchman WatchKit Extension */,
+				65DC6FDE1BA2CAB7007D30B9 /* Noose */,
+				65DC6FEC1BA2CAB7007D30B9 /* NooseTests */,
 				65524B321BA20370003F0012 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -148,6 +228,8 @@
 				65524B451BA20371003F0012 /* WatchmanTests.xctest */,
 				65524B4E1BA20371003F0012 /* Watchman WatchKit App.app */,
 				65524B5D1BA20371003F0012 /* Watchman WatchKit Extension.appex */,
+				65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */,
+				65DC6FE61BA2CAB7007D30B9 /* NooseTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -187,10 +269,6 @@
 		65524B611BA20371003F0012 /* Watchman WatchKit Extension */ = {
 			isa = PBXGroup;
 			children = (
-				65524B7D1BA20D9E003F0012 /* ImageFrames.swift */,
-				65524B7F1BA20E4C003F0012 /* GameController.swift */,
-				65524B811BA20E52003F0012 /* GameState.swift */,
-				65524B851BA21345003F0012 /* WordList.swift */,
 				65524B641BA20371003F0012 /* InterfaceController.swift */,
 				65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */,
 				65524B661BA20371003F0012 /* ExtensionDelegate.swift */,
@@ -209,7 +287,39 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		65DC6FDE1BA2CAB7007D30B9 /* Noose */ = {
+			isa = PBXGroup;
+			children = (
+				65DC6FDF1BA2CAB7007D30B9 /* Noose.h */,
+				65DC6FE11BA2CAB7007D30B9 /* Info.plist */,
+				65DC6FFB1BA2CACD007D30B9 /* WordList.swift */,
+				65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */,
+				65524B811BA20E52003F0012 /* GameState.swift */,
+			);
+			path = Noose;
+			sourceTree = "<group>";
+		};
+		65DC6FEC1BA2CAB7007D30B9 /* NooseTests */ = {
+			isa = PBXGroup;
+			children = (
+				65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */,
+				65DC6FEF1BA2CAB7007D30B9 /* Info.plist */,
+			);
+			path = NooseTests;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		65DC6FDA1BA2CAB7007D30B9 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DC6FE01BA2CAB7007D30B9 /* Noose.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
 		65524B301BA20370003F0012 /* Watchman */ = {
@@ -220,11 +330,13 @@
 				65524B2E1BA20370003F0012 /* Frameworks */,
 				65524B2F1BA20370003F0012 /* Resources */,
 				65524B761BA20371003F0012 /* Embed Watch Content */,
+				65DC6FF91BA2CAB7007D30B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				65524B511BA20371003F0012 /* PBXTargetDependency */,
+				65DC700E1BA2CEB3007D30B9 /* PBXTargetDependency */,
 			);
 			name = Watchman;
 			productName = Watchman;
@@ -273,15 +385,54 @@
 				65524B591BA20371003F0012 /* Sources */,
 				65524B5A1BA20371003F0012 /* Frameworks */,
 				65524B5B1BA20371003F0012 /* Resources */,
+				65DC70091BA2CBD2007D30B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				65DC70081BA2CBD2007D30B9 /* PBXTargetDependency */,
 			);
 			name = "Watchman WatchKit Extension";
 			productName = "Watchman WatchKit Extension";
 			productReference = 65524B5D1BA20371003F0012 /* Watchman WatchKit Extension.appex */;
 			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		65DC6FDC1BA2CAB7007D30B9 /* Noose */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DC6FF81BA2CAB7007D30B9 /* Build configuration list for PBXNativeTarget "Noose" */;
+			buildPhases = (
+				65DC6FD81BA2CAB7007D30B9 /* Sources */,
+				65DC6FD91BA2CAB7007D30B9 /* Frameworks */,
+				65DC6FDA1BA2CAB7007D30B9 /* Headers */,
+				65DC6FDB1BA2CAB7007D30B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Noose;
+			productName = Noose;
+			productReference = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		65DC6FE51BA2CAB7007D30B9 /* NooseTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 65DC6FFA1BA2CAB7007D30B9 /* Build configuration list for PBXNativeTarget "NooseTests" */;
+			buildPhases = (
+				65DC6FE21BA2CAB7007D30B9 /* Sources */,
+				65DC6FE31BA2CAB7007D30B9 /* Frameworks */,
+				65DC6FE41BA2CAB7007D30B9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				65DC6FE91BA2CAB7007D30B9 /* PBXTargetDependency */,
+				65DC6FEB1BA2CAB7007D30B9 /* PBXTargetDependency */,
+			);
+			name = NooseTests;
+			productName = NooseTests;
+			productReference = 65DC6FE61BA2CAB7007D30B9 /* NooseTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -289,6 +440,7 @@
 		65524B291BA20370003F0012 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				LastSwiftUpdateCheck = 0700;
 				LastUpgradeCheck = 0700;
 				ORGANIZATIONNAME = "Rocket Apps";
 				TargetAttributes = {
@@ -304,6 +456,13 @@
 					};
 					65524B5C1BA20371003F0012 = {
 						CreatedOnToolsVersion = 7.0;
+					};
+					65DC6FDC1BA2CAB7007D30B9 = {
+						CreatedOnToolsVersion = 7.0;
+					};
+					65DC6FE51BA2CAB7007D30B9 = {
+						CreatedOnToolsVersion = 7.0;
+						TestTargetID = 65524B301BA20370003F0012;
 					};
 				};
 			};
@@ -324,6 +483,8 @@
 				65524B441BA20371003F0012 /* WatchmanTests */,
 				65524B4D1BA20371003F0012 /* Watchman WatchKit App */,
 				65524B5C1BA20371003F0012 /* Watchman WatchKit Extension */,
+				65DC6FDC1BA2CAB7007D30B9 /* Noose */,
+				65DC6FE51BA2CAB7007D30B9 /* NooseTests */,
 			);
 		};
 /* End PBXProject section */
@@ -364,6 +525,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		65DC6FDB1BA2CAB7007D30B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC6FE41BA2CAB7007D30B9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -388,13 +563,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65524B7E1BA20D9E003F0012 /* ImageFrames.swift in Sources */,
-				65524B821BA20E52003F0012 /* GameState.swift in Sources */,
-				65524B801BA20E4C003F0012 /* GameController.swift in Sources */,
 				65524B671BA20371003F0012 /* ExtensionDelegate.swift in Sources */,
 				65524B881BA2189A003F0012 /* CharacterPickerInterfaceController.swift in Sources */,
 				65524B651BA20371003F0012 /* InterfaceController.swift in Sources */,
-				65524B861BA21345003F0012 /* WordList.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC6FD81BA2CAB7007D30B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DC700A1BA2CD2F007D30B9 /* GameState.swift in Sources */,
+				65DC6FFC1BA2CACD007D30B9 /* WordList.swift in Sources */,
+				65DC6FFE1BA2CB22007D30B9 /* ImageFrames.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		65DC6FE21BA2CAB7007D30B9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				65DC6FEE1BA2CAB7007D30B9 /* NooseTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,6 +604,26 @@
 			isa = PBXTargetDependency;
 			target = 65524B5C1BA20371003F0012 /* Watchman WatchKit Extension */;
 			targetProxy = 65524B5F1BA20371003F0012 /* PBXContainerItemProxy */;
+		};
+		65DC6FE91BA2CAB7007D30B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DC6FDC1BA2CAB7007D30B9 /* Noose */;
+			targetProxy = 65DC6FE81BA2CAB7007D30B9 /* PBXContainerItemProxy */;
+		};
+		65DC6FEB1BA2CAB7007D30B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65524B301BA20370003F0012 /* Watchman */;
+			targetProxy = 65DC6FEA1BA2CAB7007D30B9 /* PBXContainerItemProxy */;
+		};
+		65DC70081BA2CBD2007D30B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DC6FDC1BA2CAB7007D30B9 /* Noose */;
+			targetProxy = 65DC70071BA2CBD2007D30B9 /* PBXContainerItemProxy */;
+		};
+		65DC700E1BA2CEB3007D30B9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 65DC6FDC1BA2CAB7007D30B9 /* Noose */;
+			targetProxy = 65DC700D1BA2CEB3007D30B9 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -532,6 +741,7 @@
 		65524B701BA20371003F0012 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Watchman WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman.watchkitapp.watchkitextension;
@@ -546,6 +756,7 @@
 		65524B711BA20371003F0012 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = "Watchman WatchKit Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman.watchkitapp.watchkitextension;
@@ -593,6 +804,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Watchman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman;
@@ -604,6 +816,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Watchman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman;
@@ -635,6 +848,71 @@
 			};
 			name = Release;
 		};
+		65DC6FF41BA2CAB7007D30B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Noose/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Noose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		65DC6FF51BA2CAB7007D30B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Noose/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Noose;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		65DC6FF61BA2CAB7007D30B9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.NooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watchman.app/Watchman";
+			};
+			name = Debug;
+		};
+		65DC6FF71BA2CAB7007D30B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = NooseTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.NooseTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watchman.app/Watchman";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -654,6 +932,7 @@
 				65524B711BA20371003F0012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65524B731BA20371003F0012 /* Build configuration list for PBXNativeTarget "Watchman WatchKit App" */ = {
 			isa = XCConfigurationList;
@@ -662,6 +941,7 @@
 				65524B751BA20371003F0012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65524B771BA20371003F0012 /* Build configuration list for PBXNativeTarget "Watchman" */ = {
 			isa = XCConfigurationList;
@@ -670,12 +950,30 @@
 				65524B791BA20371003F0012 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65524B7A1BA20371003F0012 /* Build configuration list for PBXNativeTarget "WatchmanTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				65524B7B1BA20371003F0012 /* Debug */,
 				65524B7C1BA20371003F0012 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		65DC6FF81BA2CAB7007D30B9 /* Build configuration list for PBXNativeTarget "Noose" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DC6FF41BA2CAB7007D30B9 /* Debug */,
+				65DC6FF51BA2CAB7007D30B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		65DC6FFA1BA2CAB7007D30B9 /* Build configuration list for PBXNativeTarget "NooseTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				65DC6FF61BA2CAB7007D30B9 /* Debug */,
+				65DC6FF71BA2CAB7007D30B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};

@@ -8,19 +8,24 @@
 
 import Foundation
 
-class WordList {
+/**
+    Loading an entire wordlist into memory is kinda a terrible idea.
+*/
+
+public class WordList {
     private let fileURL: String
     private var words: [String] = []
     
-    init(fileURL: String) {
+    public init(fileURL: String) {
         self.fileURL = fileURL
     }
     
-    func fetchRandomWord() -> String {
+    public func fetchRandomWord() -> String {
         let string = try! NSString(contentsOfFile: self.fileURL, encoding: NSUTF8StringEncoding)
         let components = string.componentsSeparatedByString("\n")
         let index = random() % components.count
         let word = components[index].lowercaseString
+        print(word)
         
         return word
     }

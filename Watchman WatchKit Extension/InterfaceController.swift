@@ -8,6 +8,7 @@
 
 import WatchKit
 import Foundation
+import Noose
 
 class ContextObject {
     var input: String?

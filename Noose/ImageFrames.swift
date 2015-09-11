@@ -8,7 +8,7 @@
 
 import UIKit
 
-enum ImageFrame : String {
+public enum ImageFrame : String {
     case Frame0 = "Frame 0"
     case Frame1 = "Frame 1"
     case Frame2 = "Frame 2"
@@ -22,7 +22,7 @@ enum ImageFrame : String {
     case Frame10 = "Frame 10"
     case Frame11 = "Frame 11"
     
-    func nextFrame() -> ImageFrame {
+    public func nextFrame() -> ImageFrame {
         var frame: ImageFrame!
         switch self {
         case .Frame0:

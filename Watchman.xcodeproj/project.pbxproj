@@ -24,7 +24,6 @@
 		65524B881BA2189A003F0012 /* CharacterPickerInterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B871BA2189A003F0012 /* CharacterPickerInterfaceController.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC6FE01BA2CAB7007D30B9 /* Noose.h in Headers */ = {isa = PBXBuildFile; fileRef = 65DC6FDF1BA2CAB7007D30B9 /* Noose.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		65DC6FE71BA2CAB7007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ASSET_TAGS = (); }; };
-		65DC6FEE1BA2CAB7007D30B9 /* NooseTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */; };
 		65DC6FFC1BA2CACD007D30B9 /* WordList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FFB1BA2CACD007D30B9 /* WordList.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC6FFE1BA2CB22007D30B9 /* ImageFrames.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC70051BA2CBD2007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
@@ -32,6 +31,11 @@
 		65DC700A1BA2CD2F007D30B9 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC700B1BA2CEB3007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
 		65DC700C1BA2CEB3007D30B9 /* Noose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		65DC70101BA2D25C007D30B9 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC700F1BA2D25C007D30B9 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC70121BA2D28C007D30B9 /* GameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70111BA2D28C007D30B9 /* GameControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC70141BA2D2D2007D30B9 /* GameStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70131BA2D2D2007D30B9 /* GameStateTests.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC70161BA2D2DA007D30B9 /* ImageFrameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70151BA2D2DA007D30B9 /* ImageFrameTests.swift */; settings = {ASSET_TAGS = (); }; };
+		65DC70181BA2D2E0007D30B9 /* WordListTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70171BA2D2E0007D30B9 /* WordListTests.swift */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -160,10 +164,14 @@
 		65DC6FDF1BA2CAB7007D30B9 /* Noose.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Noose.h; sourceTree = "<group>"; };
 		65DC6FE11BA2CAB7007D30B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DC6FE61BA2CAB7007D30B9 /* NooseTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NooseTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NooseTests.swift; sourceTree = "<group>"; };
 		65DC6FEF1BA2CAB7007D30B9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		65DC6FFB1BA2CACD007D30B9 /* WordList.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordList.swift; sourceTree = "<group>"; };
 		65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrames.swift; sourceTree = "<group>"; };
+		65DC700F1BA2D25C007D30B9 /* GameController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameController.swift; sourceTree = "<group>"; };
+		65DC70111BA2D28C007D30B9 /* GameControllerTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameControllerTests.swift; sourceTree = "<group>"; };
+		65DC70131BA2D2D2007D30B9 /* GameStateTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStateTests.swift; sourceTree = "<group>"; };
+		65DC70151BA2D2DA007D30B9 /* ImageFrameTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageFrameTests.swift; sourceTree = "<group>"; };
+		65DC70171BA2D2E0007D30B9 /* WordListTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WordListTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -295,6 +303,7 @@
 				65DC6FFB1BA2CACD007D30B9 /* WordList.swift */,
 				65DC6FFD1BA2CB22007D30B9 /* ImageFrames.swift */,
 				65524B811BA20E52003F0012 /* GameState.swift */,
+				65DC700F1BA2D25C007D30B9 /* GameController.swift */,
 			);
 			path = Noose;
 			sourceTree = "<group>";
@@ -302,8 +311,11 @@
 		65DC6FEC1BA2CAB7007D30B9 /* NooseTests */ = {
 			isa = PBXGroup;
 			children = (
-				65DC6FED1BA2CAB7007D30B9 /* NooseTests.swift */,
 				65DC6FEF1BA2CAB7007D30B9 /* Info.plist */,
+				65DC70111BA2D28C007D30B9 /* GameControllerTests.swift */,
+				65DC70131BA2D2D2007D30B9 /* GameStateTests.swift */,
+				65DC70151BA2D2DA007D30B9 /* ImageFrameTests.swift */,
+				65DC70171BA2D2E0007D30B9 /* WordListTests.swift */,
 			);
 			path = NooseTests;
 			sourceTree = "<group>";
@@ -574,6 +586,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				65DC700A1BA2CD2F007D30B9 /* GameState.swift in Sources */,
+				65DC70101BA2D25C007D30B9 /* GameController.swift in Sources */,
 				65DC6FFC1BA2CACD007D30B9 /* WordList.swift in Sources */,
 				65DC6FFE1BA2CB22007D30B9 /* ImageFrames.swift in Sources */,
 			);
@@ -583,7 +596,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65DC6FEE1BA2CAB7007D30B9 /* NooseTests.swift in Sources */,
+				65DC70121BA2D28C007D30B9 /* GameControllerTests.swift in Sources */,
+				65DC70181BA2D2E0007D30B9 /* WordListTests.swift in Sources */,
+				65DC70141BA2D2D2007D30B9 /* GameStateTests.swift in Sources */,
+				65DC70161BA2D2DA007D30B9 /* ImageFrameTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -898,10 +914,12 @@
 		65DC6FF61BA2CAB7007D30B9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NooseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.NooseTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Watchman.app/Watchman";
 			};
 			name = Debug;
@@ -909,6 +927,7 @@
 		65DC6FF71BA2CAB7007D30B9 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = NooseTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.NooseTests;

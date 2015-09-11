@@ -26,7 +26,7 @@ public class WordList: WordListProtocol {
         */
         let string = try! NSString(contentsOfFile: self.fileURL, encoding: NSUTF8StringEncoding)
         let components = string.componentsSeparatedByString("\n")
-        let index = random() % components.count
+        let index = Int(arc4random_uniform(UInt32(components.count)))
         let word = components[index].lowercaseString
         print(word)
         

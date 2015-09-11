@@ -11,35 +11,36 @@ import Foundation
 import Noose
 
 class ContextObject {
-    var input: String?
+    var input: [Character]?
     var output: Character?
 }
 
 class InterfaceController: WKInterfaceController {
     var contextObject: ContextObject?
-    var gameState: GameState!
+    lazy var gameController: GameController = {
+        let list = WordList(fileURL: NSBundle.mainBundle().pathForResource("words", ofType: "txt")!)
+        
+        return GameController(wordList: list)
+    }()
     
     @IBOutlet var hangmanImageView: WKInterfaceImage!
     @IBOutlet var guessLabel: WKInterfaceLabel!
     
     @IBAction func resetGameButtonTapped() {
-        let list = WordList(fileURL: NSBundle.mainBundle().pathForResource("words", ofType: "txt")!)
-        let word = list.fetchRandomWord()
-        gameState = GameState(answer: word)
+        gameController.newGame()
         updateUI()
     }
     
     @IBAction func pickCharacterButtonTapped() {
-        if gameState.frame == .Frame11 {
+        if gameController.stage != .InProgress {
             WKInterfaceDevice().playHaptic(.Failure)
-            
             return
         }
         
-        let string = String(Array(gameState.guessedCharacters))
+        let selectableCharacters = Array(gameController.validCharacters)
         
         contextObject = ContextObject()
-        contextObject?.input = string
+        contextObject?.input = selectableCharacters
         
         pushControllerWithName("CharacterPicker", context: contextObject)
     }
@@ -48,28 +49,31 @@ class InterfaceController: WKInterfaceController {
         super.didAppear()
         
         if let output = self.contextObject?.output {
-            if gameState.guess(output) {
+            if gameController.guess(output) {
                 WKInterfaceDevice().playHaptic(.Success)
             }
             else {
                 WKInterfaceDevice().playHaptic(.Failure)
             }
+            
+            contextObject = nil
         }
         
-        if let _ = self.gameState {
-            updateUI()
-        }
-        else {
-            resetGameButtonTapped()
-        }
-        
-        contextObject = nil
+        updateUI()
     }
     
     func updateUI() {
-        guessLabel.setText(gameState.displayString())
-        animateWithDuration(0.2) {
-            self.hangmanImageView.setImageNamed(self.gameState.frame.rawValue)
+        switch gameController.stage {
+        case .InProgress:
+            guessLabel.setTextColor(.whiteColor())
+            guessLabel.setText(gameController.displayString)
+            hangmanImageView.setImageNamed(gameController.watchmanFrame.rawValue)
+        case .Won:
+            guessLabel.setTextColor(.greenColor())
+            guessLabel.setText(gameController.displayString)
+        case .Lost:
+            guessLabel.setTextColor(.redColor())
+            guessLabel.setText(gameController.displayString)
         }
     }
 }

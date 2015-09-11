@@ -9,17 +9,15 @@
 import WatchKit
 import Foundation
 
-
 class CharacterPickerInterfaceController: WKInterfaceController {
-    var data: [Character] = []
     var currentIndex = 0
     var contextObject: ContextObject?
     @IBOutlet weak var pickerView: WKInterfacePicker?
     
     
     @IBAction func select() {
-        precondition(data.count > currentIndex, "Value should be within the bounds of data")
-        let selected = data[currentIndex]
+        precondition(contextObject?.input?.count > currentIndex, "Value should be within the bounds of data")
+        let selected = contextObject?.input?[currentIndex]
         contextObject?.output = selected
         popController()
     }
@@ -32,7 +30,7 @@ class CharacterPickerInterfaceController: WKInterfaceController {
         super.awakeWithContext(context)
         
         guard let contextObject = context as? ContextObject,
-                  usedChars = contextObject.input
+                  characters = contextObject.input
             else {
             popController()
             return
@@ -40,18 +38,7 @@ class CharacterPickerInterfaceController: WKInterfaceController {
         
         self.contextObject = contextObject
         
-        let used = usedChars.characters
-        let alphabet = "abcdefghijklmnopqrstuvwxyz".characters
-        
-        let notUsed: Character -> Bool = { char in
-            return !used.contains(char)
-        }
-        
-        let usableCharacters = alphabet.filter(notUsed)
-        
-        data = usableCharacters
-        
-        let items = usableCharacters.map { character -> WKPickerItem in
+        let items = characters.map { character -> WKPickerItem in
             let item = WKPickerItem()
             item.title = String(character)
             

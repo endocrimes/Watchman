@@ -16,4 +16,18 @@ public struct GameState {
     public init(answer: String) {
         self.answer = answer
     }
+    
+    public var stage: Stage {
+        if frame == .Frame11 {
+            return .Lost
+        }
+        
+        let answered = !answer.characters.map(guessedCharacters.contains).contains(false)
+        
+        if answered {
+            return .Won
+        }
+        
+        return .InProgress
+    }
 }

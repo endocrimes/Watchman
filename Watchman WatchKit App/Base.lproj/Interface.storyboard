@@ -14,13 +14,13 @@
                             <items>
                                 <group width="1" alignment="left" id="Ilh-di-DOb">
                                     <items>
-                                        <imageView width="1" alignment="left" image="Frame 1" contentMode="center" id="82K-CI-Pj8"/>
+                                        <imageView width="1" alignment="left" image="Frame 0" contentMode="center" id="82K-CI-Pj8"/>
                                     </items>
                                 </group>
                                 <group width="1" height="0.10000000000000001" alignment="left" id="WoO-Ie-ViS"/>
                                 <group width="1" alignment="left" id="JiM-Hs-yIh">
                                     <items>
-                                        <label width="1" alignment="left" text="_ _ _ _ _ _ _ _" textAlignment="center" id="4wu-4H-QIk">
+                                        <label width="1" alignment="left" text=" " textAlignment="center" id="4wu-4H-QIk">
                                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                         </label>
                                     </items>
@@ -46,7 +46,6 @@
                     <connections>
                         <outlet property="guessLabel" destination="4wu-4H-QIk" id="lP9-So-JvX"/>
                         <outlet property="hangmanImageView" destination="82K-CI-Pj8" id="fwR-aK-R4H"/>
-                        <outlet property="resetGameButtonTapped" destination="8qV-nm-9ou" id="OAE-Rk-2Sk"/>
                     </connections>
                 </controller>
             </objects>

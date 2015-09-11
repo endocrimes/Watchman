@@ -8,11 +8,21 @@
 
 import Foundation
 
+public enum Stage {
+    case InProgress
+    case Won
+    case Lost
+}
+
 public class GameController {
     private let wordList: WordListProtocol
     private var gameState: GameState!
     
     public var displayString: String {
+        if stage == .Lost {
+            return gameState.answer
+        }
+        
         var string = ""
         for character in gameState.answer.characters {
             if string.characters.count > 0 {
@@ -30,14 +40,34 @@ public class GameController {
         return string
     }
     
+    public var watchmanFrame: ImageFrame {
+        return gameState.frame
+    }
+    
+    public var stage: Stage {
+        return gameState.stage
+    }
+    
+    public var validCharacters: [Character] {
+        var characters = [Character]()
+        let alphabet = "aeioubcdfghjklmnpqrstvwxyz"
+        
+        for c in alphabet.characters {
+            if !gameState.guessedCharacters.contains(c) {
+                characters.append(c)
+            }
+        }
+        
+        return characters
+    }
+    
     /**
      Create a new instance of GameController with a word list to select from.
      */
     public init(wordList: WordListProtocol) {
         self.wordList = wordList
-        let firstWord = wordList.fetchRandomWord()
         
-        self.gameState = GameState(answer: firstWord)
+        newGame()
     }
     
     /**
@@ -54,5 +84,9 @@ public class GameController {
         }
         
         return result
-    }   
+    }
+    
+    public func newGame() {
+        gameState = GameState(answer: wordList.fetchRandomWord())
+    }
 }

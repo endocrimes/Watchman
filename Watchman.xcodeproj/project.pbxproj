@@ -29,8 +29,6 @@
 		65DC70051BA2CBD2007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
 		65DC70061BA2CBD2007D30B9 /* Noose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65DC700A1BA2CD2F007D30B9 /* GameState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65524B811BA20E52003F0012 /* GameState.swift */; settings = {ASSET_TAGS = (); }; };
-		65DC700B1BA2CEB3007D30B9 /* Noose.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; };
-		65DC700C1BA2CEB3007D30B9 /* Noose.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 65DC6FDD1BA2CAB7007D30B9 /* Noose.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		65DC70101BA2D25C007D30B9 /* GameController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC700F1BA2D25C007D30B9 /* GameController.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC70121BA2D28C007D30B9 /* GameControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70111BA2D28C007D30B9 /* GameControllerTests.swift */; settings = {ASSET_TAGS = (); }; };
 		65DC70141BA2D2D2007D30B9 /* GameStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65DC70131BA2D2D2007D30B9 /* GameStateTests.swift */; settings = {ASSET_TAGS = (); }; };
@@ -81,13 +79,6 @@
 			remoteGlobalIDString = 65DC6FDC1BA2CAB7007D30B9;
 			remoteInfo = Noose;
 		};
-		65DC700D1BA2CEB3007D30B9 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 65524B291BA20370003F0012 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 65DC6FDC1BA2CAB7007D30B9;
-			remoteInfo = Noose;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -111,17 +102,6 @@
 				65524B4F1BA20371003F0012 /* Watchman WatchKit App.app in Embed Watch Content */,
 			);
 			name = "Embed Watch Content";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		65DC6FF91BA2CAB7007D30B9 /* Embed Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				65DC700C1BA2CEB3007D30B9 /* Noose.framework in Embed Frameworks */,
-			);
-			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		65DC70091BA2CBD2007D30B9 /* Embed Frameworks */ = {
@@ -179,7 +159,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				65DC700B1BA2CEB3007D30B9 /* Noose.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,13 +321,11 @@
 				65524B2E1BA20370003F0012 /* Frameworks */,
 				65524B2F1BA20370003F0012 /* Resources */,
 				65524B761BA20371003F0012 /* Embed Watch Content */,
-				65DC6FF91BA2CAB7007D30B9 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				65524B511BA20371003F0012 /* PBXTargetDependency */,
-				65DC700E1BA2CEB3007D30B9 /* PBXTargetDependency */,
 			);
 			name = Watchman;
 			productName = Watchman;
@@ -636,11 +613,6 @@
 			target = 65DC6FDC1BA2CAB7007D30B9 /* Noose */;
 			targetProxy = 65DC70071BA2CBD2007D30B9 /* PBXContainerItemProxy */;
 		};
-		65DC700E1BA2CEB3007D30B9 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 65DC6FDC1BA2CAB7007D30B9 /* Noose */;
-			targetProxy = 65DC700D1BA2CEB3007D30B9 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -820,7 +792,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Watchman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman;
@@ -832,7 +803,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = Watchman/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = co.rocketapps.Watchman;
@@ -991,6 +961,7 @@
 				65DC6FF51BA2CAB7007D30B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		65DC6FFA1BA2CAB7007D30B9 /* Build configuration list for PBXNativeTarget "NooseTests" */ = {
 			isa = XCConfigurationList;
@@ -999,6 +970,7 @@
 				65DC6FF71BA2CAB7007D30B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

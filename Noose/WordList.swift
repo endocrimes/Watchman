@@ -8,11 +8,11 @@
 
 import Foundation
 
-/**
-    Loading an entire wordlist into memory is kinda a terrible idea.
-*/
+public protocol WordListProtocol {
+    func fetchRandomWord() -> String
+}
 
-public class WordList {
+public class WordList: WordListProtocol {
     private let fileURL: String
     private var words: [String] = []
     
@@ -21,6 +21,9 @@ public class WordList {
     }
     
     public func fetchRandomWord() -> String {
+        /**
+        Loading an entire wordlist into memory is kinda a terrible idea.
+        */
         let string = try! NSString(contentsOfFile: self.fileURL, encoding: NSUTF8StringEncoding)
         let components = string.componentsSeparatedByString("\n")
         let index = random() % components.count

@@ -10,30 +10,29 @@
             <objects>
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Watchman_WatchKit_App" customModuleProvider="target">
                     <items>
-                        <group width="1" height="1" alignment="left" layout="vertical" id="qN9-D0-3cE">
+                        <group width="1" height="0.69999999999999996" alignment="left" layout="vertical" id="e0b-S7-oAh">
                             <items>
-                                <group width="1" alignment="left" id="Ilh-di-DOb">
+                                <imageView width="1" height="0.59999999999999998" alignment="left" image="Frame 0" contentMode="scaleAspectFit" id="82K-CI-Pj8"/>
+                                <group width="1" height="0.40000000000000002" alignment="left" verticalAlignment="bottom" id="JiM-Hs-yIh">
                                     <items>
-                                        <imageView width="1" alignment="left" image="Frame 0" contentMode="center" id="82K-CI-Pj8"/>
-                                    </items>
-                                </group>
-                                <group width="1" height="0.10000000000000001" alignment="left" id="WoO-Ie-ViS"/>
-                                <group width="1" alignment="left" id="JiM-Hs-yIh">
-                                    <items>
-                                        <label width="1" alignment="left" text=" " textAlignment="center" id="4wu-4H-QIk">
+                                        <label width="1" alignment="left" verticalAlignment="center" text=" " textAlignment="center" id="4wu-4H-QIk">
                                             <fontDescription key="font" style="UICTFontTextStyleHeadline"/>
                                         </label>
                                     </items>
-                                    <edgeInsets key="margins" left="0.0" right="0.0" top="0.0" bottom="10"/>
+                                    <edgeInsets key="margins" left="0.0" right="0.0" top="10" bottom="10"/>
                                 </group>
+                            </items>
+                        </group>
+                        <group width="1" height="0.29999999999999999" alignment="left" layout="vertical" id="qN9-D0-3cE">
+                            <items>
                                 <group width="1" alignment="left" id="nvu-Js-h84">
                                     <items>
-                                        <button width="0.5" alignment="left" title="Aa" id="kfF-Q0-qub">
+                                        <button width="0.5" height="1" alignment="left" title="Aa" id="kfF-Q0-qub">
                                             <connections>
                                                 <action selector="pickCharacterButtonTapped" destination="AgC-eL-Hgc" id="H1O-eg-2jP"/>
                                             </connections>
                                         </button>
-                                        <button width="0.5" alignment="right" title="Reset" id="8qV-nm-9ou">
+                                        <button width="0.5" height="1" alignment="right" title="Reset" id="8qV-nm-9ou">
                                             <connections>
                                                 <action selector="resetGameButtonTapped" destination="AgC-eL-Hgc" id="pNP-zg-Nvc"/>
                                             </connections>
@@ -67,7 +66,7 @@
                                         </picker>
                                         <group width="1" height="0.29999999999999999" alignment="left" id="Hmz-SZ-wXF">
                                             <items>
-                                                <button width="1" alignment="left" title="Select" id="20K-Vc-6zE">
+                                                <button width="1" height="1" alignment="left" title="Select" id="20K-Vc-6zE">
                                                     <connections>
                                                         <action selector="select" destination="Qml-Zr-zdz" id="7Kr-RY-uLT"/>
                                                     </connections>
